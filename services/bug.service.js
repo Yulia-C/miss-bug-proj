@@ -41,10 +41,12 @@ function save(bugToSave) {
 
     if (bugToSave._id) {
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
+        
         if (idx === -1) {
             loggerService.error(`Couldn\'t update bug: ${bugToSave._id} in bug service`)
             return Promise.reject(`Couldn't update bug`)
         }
+
         bugs.splice(idx, 1, bugToSave)
     } else {
         bugToSave._id = makeId()

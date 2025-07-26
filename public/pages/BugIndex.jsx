@@ -30,8 +30,10 @@ export function BugIndex() {
 
     function onAddBug() {
         const bug = {
-            title: prompt('Bug title?', 'Bug ' + Date.now()),
-            severity: +prompt('Bug severity?', 3)
+            title: prompt('Bug title?', ''),
+            severity: +prompt('Bug severity?', 3),
+            description: prompt('Describe the bug:', ''),
+            createdAt: Date.now(),
         }
 
         bugService.save(bug)
@@ -44,7 +46,8 @@ export function BugIndex() {
 
     function onEditBug(bug) {
         const severity = +prompt('New severity?', bug.severity)
-        const bugToSave = { ...bug, severity }
+        const description = prompt('New description?', bug.description)
+        const bugToSave = { ...bug, severity, description }
 
         bugService.save(bugToSave)
             .then(savedBug => {
@@ -62,16 +65,16 @@ export function BugIndex() {
     }
 
     return <section className="bug-index main-content">
-        
+
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
             <button onClick={onAddBug}>Add Bug</button>
         </header>
-        
-        <BugList 
-            bugs={bugs} 
-            onRemoveBug={onRemoveBug} 
+
+        <BugList
+            bugs={bugs}
+            onRemoveBug={onRemoveBug}
             onEditBug={onEditBug} />
     </section>
 }

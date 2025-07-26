@@ -1,22 +1,26 @@
 [
   {
     "title": "Infinite Loop Detected",
-    "severity": 4,
-    "_id": "1NF1N1T3"
+    "severity": 2,
+    "_id": "1NF1N1T3",
+    "description": "This bug traps programs in a relentless cycle, consuming time and sanity until all logic breaks down."
   },
   {
-    "title": "Bug 1753540942393",
+    "title": "Keyboard Not Found",
     "severity": 3,
-    "_id": "ZijCt"
+    "_id": "K3YB0RD",
+    "description": "A mischievous glitch that disables input entirely—perfect for silencing panicked users mid-debug."
   },
   {
-    "title": "Bug 1753540958294",
-    "severity": 3,
-    "_id": "wkNXE"
+    "title": "404 Coffee Not Found",
+    "severity": 2,
+    "_id": "C0FF33",
+    "description": "A critical error in developer productivity—caused by an empty mug and shattered dreams."
   },
   {
-    "title": "Bug 1753543187018",
-    "severity": 3,
-    "_id": "LVuIH"
+    "title": "Unexpected Response",
+    "severity": 1,
+    "_id": "G0053",
+    "description": "The wildcard menace that sends cryptic replies, breaking APIs and confusing even the most seasoned devs."
   }
 ]

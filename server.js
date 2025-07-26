@@ -17,12 +17,13 @@ app.get('/api/bug', (req, res) => {
 
 // add
 app.get('/api/bug/save', (req, res) => {
-    const { title, severity, _id } = req.query
+    const { title, severity, _id, description } = req.query
 
     const bugToSave = {
         title,
         severity: +severity,
         _id,
+        description,
     }
 
     bugService.save(bugToSave)
