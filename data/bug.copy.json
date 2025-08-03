@@ -4,27 +4,42 @@
     "severity": 2,
     "_id": "1NF1N1T3",
     "description": "This bug traps programs in a relentless cycle, consuming time and sanity until all logic breaks down.",
-    "createdAt": "1542107359454"
+    "createdAt": "1542107359454",
+    "labels": [
+      "critical",
+      "need-CR",
+      "dev-branch"
+    ]
   },
   {
     "title": "Keyboard Not Found",
     "severity": 3,
     "_id": "K3YB0RD",
     "description": "A mischievous glitch that disables input entirely—perfect for silencing panicked users mid-debug.",
-    "createdAt": "1542107359454"
+    "createdAt": "1542107359454",
+    "labels": [
+      "need-CR",
+      "dev-branch"
+    ]
   },
   {
     "title": "404 Coffee Not Found",
     "severity": 2,
     "_id": "C0FF33",
     "description": "A critical error in developer productivity—caused by an empty mug and shattered dreams.",
-    "createdAt": "1542107359454"
+    "createdAt": "1542107359454",
+    "labels": [
+      "need-CR",
+      "critical"
+    ]
   },
   {
     "title": "Unexpected Response",
     "severity": 1,
     "_id": "G0053",
     "description": "The wildcard menace that sends cryptic replies, breaking APIs and confusing even the most seasoned devs.",
-    "createdAt": "1542107359454"
+    "createdAt": "1542107359454",
+    "labels": [
+      "need-CR"]
   }
 ]

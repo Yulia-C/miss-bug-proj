@@ -6,13 +6,12 @@ export const bugService = {
     getById,
     remove,
     save,
-
-
+    getEmptyBug
 }
 const bugs = readJsonFile('./data/bug.json')
 
 function query(filterBy = {}) {
-    
+
     let bugsToDisplay = bugs
 
     if (filterBy.txt) {
@@ -28,7 +27,7 @@ function query(filterBy = {}) {
         const startIdx = filterBy.pageIdx * PAGE_SIZE // 0, 3, 6
         bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE)
     }
- 
+
     return Promise.resolve(bugsToDisplay)
 }
 
@@ -44,7 +43,7 @@ function getById(bugId) {
 
 function remove(bugId) {
     const idx = bugs.findIndex(bug => bug._id === bugId)
-
+// console.log('bugId:', bugId)
     if (idx === -1) {
         loggerService.error(`Couldn\'t remove bug: ${bugId} in bug service`)
         return Promise.reject(`Couldn't remove bug`)
@@ -55,7 +54,6 @@ function remove(bugId) {
 }
 
 function save(bugToSave) {
-
     if (bugToSave._id) {
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
         if (idx === -1) {
@@ -76,4 +74,14 @@ function save(bugToSave) {
 
 function _saveBugs() {
     return writeJsonFile('./data/bug.json', bugs)
+}
+
+function getEmptyBug() {
+    return {
+        title: title || '',
+        severity: severity || '',
+        description: description || '',
+        createdAt: Date.now(),
+        labels: [],
+    }
 }

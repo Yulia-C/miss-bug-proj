@@ -1,20 +1,21 @@
 import express from 'express'
 import cookieParser from 'cookie-parser'
+
 import { bugService } from './services/bug.service.js'
 import { loggerService } from './services/logger.service.js'
 
 const app = express()
+
 app.use(express.static('public'))
 app.use(cookieParser())
 app.use(express.json())
 
 app.get('/', (req, res) => {
-
     res.send('Welcome to MissBug server...')
 })
 
 //* Express Routing:
-// list
+// list 
 app.get('/api/bug', (req, res) => {
 
     const filterBy = {
@@ -25,19 +26,22 @@ app.get('/api/bug', (req, res) => {
 
     bugService.query(filterBy)
         .then(bugs => res.send(bugs))
+        .catch(err => {
+            loggerService.error('Cannot get bugs', err)
+            res.status(400).send('Cannot load bugs')
+        })
 })
 
-// add
-app.get('/api/bug/save', (req, res) => {
-    const { title, severity, _id, description } = req.query
-
+// Create
+app.post('/api/bug', (req, res) => {
+    const { title, severity, description, labels = ['critical'] } = req.body
+    // const bugToSave = bugService.getEmptyBug(req.body)
     const bugToSave = {
         title,
         severity: +severity,
-        _id,
         description,
+        labels
     }
-
     bugService.save(bugToSave)
         .then(savedBug => res.send(savedBug))
         .catch(err => {
@@ -46,7 +50,25 @@ app.get('/api/bug/save', (req, res) => {
         })
 })
 
-// read
+// Update
+app.put('/api/bug/:id', (req, res) => {
+    const { title, severity, _id, description, labels } = req.body
+    const bugToSave = {
+        title,
+        severity: +severity,
+        _id,
+        description,
+        labels
+    }
+    bugService.save(bugToSave)
+        .then(savedBug => res.send(savedBug))
+        .catch(err => {
+            loggerService.error('Cannot save bug',err)
+            res.status(400).send(err)
+        })
+})
+
+// read by id
 app.get('/api/bug/:id', (req, res) => {
     const bugId = req.params.id
     var visitedBugs = req.cookies.visitedBugs || []
@@ -72,11 +94,11 @@ app.get('/api/bug/:id', (req, res) => {
 })
 
 // delete
-app.get('/api/bug/:id/remove', (req, res) => {
+app.delete('/api/bug/:id', (req, res) => {
 
     const bugId = req.params.id
     bugService.remove(bugId)
-        .then(bug => res.send(`bug ${bugId} deleted`))
+        .then(() => res.send(`bug ${bugId} deleted`))
         .catch(err => {
             loggerService.error(err)
             res.status(400).send(err)
@@ -84,5 +106,6 @@ app.get('/api/bug/:id/remove', (req, res) => {
 })
 
 const port = 3030
-
 app.listen(port, () => loggerService.info(`Server ready at port http://127.0.0.1:${port}/`))
+// or
+// app.listen(port, () => loggerService.info(`Server ready at port http://localhost:${port}/`))
