@@ -6,15 +6,24 @@ import { loggerService } from './services/logger.service.js'
 const app = express()
 app.use(express.static('public'))
 app.use(cookieParser())
+app.use(express.json())
 
 app.get('/', (req, res) => {
 
     res.send('Welcome to MissBug server...')
 })
 
+//* Express Routing:
 // list
 app.get('/api/bug', (req, res) => {
-    bugService.query()
+
+    const filterBy = {
+        txt: req.query.txt,
+        minSeverity: req.query.minSeverity,
+        pageIdx: req.query.pageIdx
+    }
+
+    bugService.query(filterBy)
         .then(bugs => res.send(bugs))
 })
 
@@ -53,7 +62,7 @@ app.get('/api/bug/:id', (req, res) => {
     console.log('User visited at the following bugs:', visitedBugs)
 
     res.cookie('visitedBugs', visitedBugs, { maxAge: 1000 * 7 })
-  
+
     bugService.getById(bugId)
         .then(bug => res.send(bug))
         .catch(err => {
