@@ -1,4 +1,3 @@
-import { storageService } from './async-storage.service.js'
 
 const BASE_URL = '/api/bug/'
 
@@ -8,10 +7,11 @@ export const bugService = {
     getById,
     save,
     remove,
-    getDefaultFilter
+    getDefaultFilter,
+    getTotalBugs
 }
 
-function query(filterBy = {}) {
+function query(filterBy) {
     return axios.get(BASE_URL, { params: filterBy })
         .then(res => res.data)
 }
@@ -38,7 +38,11 @@ function save(bug) {
 
 }
 
+function getTotalBugs() {
+    return axios.get(BASE_URL + 'totalCount')
+        .then(res => res.data)
+}
 
 function getDefaultFilter() {
-    return { txt: '', minSeverity: 0 }
+    return { txt: '', minSeverity: 0, sortBy: '', sortDir: 1, pageIdx: 0 }
 }

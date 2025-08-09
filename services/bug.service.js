@@ -6,27 +6,50 @@ export const bugService = {
     getById,
     remove,
     save,
-    getEmptyBug
+    getEmptyBug,
+    getTotalCount
 }
+
 const bugs = readJsonFile('./data/bug.json')
 
-function query(filterBy = {}) {
+const PAGE_SIZE = 2
+let totalPages = null
+
+function query(filter, sort, page) {
 
     let bugsToDisplay = bugs
 
-    if (filterBy.txt) {
-        const regExp = new RegExp(filterBy.txt, 'i')
-        bugsToDisplay = bugsToDisplay.filter(bug => regExp.test(bug.title))
+    if (filter.minSeverity) {
+        bugsToDisplay = bugsToDisplay.filter(bug => bug.severity >= filter.minSeverity)
     }
 
-    if (filterBy.minSeverity) {
-        bugsToDisplay = bugsToDisplay.filter(bug => bug.severity >= filterBy.minSeverity)
+    if (filter.txt) {
+        const regExp = new RegExp(filter.txt, 'i')
+        bugsToDisplay = bugsToDisplay.filter(bug =>
+            regExp.test(bug.title)
+            || bug.labels.some(label => regExp.test(label))
+            || regExp.test(bug.description))
     }
 
-    if (filterBy.pageIdx !== undefined) {
-        const startIdx = filterBy.pageIdx * PAGE_SIZE // 0, 3, 6
-        bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE)
+    if (sort.sortBy) {
+        ['severity', 'createdAt'].includes(sort.sortBy)
+            ? bugsToDisplay.sort((a, b) =>
+                (a[sort.sortBy] - b[sort.sortBy]) * sort.sortDir)
+            : bugsToDisplay.sort((a, b) =>
+                a[sort.sortBy].localeCompare(b[sort.sortby]) * sort.sortDir)
     }
+
+    totalPages = Math.ceil(bugsToDisplay.length / PAGE_SIZE)
+
+    let pageIdx = page.pageIdx
+
+    const startIdx = page.pageIdx * PAGE_SIZE // 0, 3, 6
+    const endIdx = startIdx + PAGE_SIZE
+
+    if (pageIdx < 0) totalPages - 1
+    if (pageIdx >= totalPages) pageIdx = 0
+
+    bugsToDisplay = bugsToDisplay.slice(startIdx, endIdx)
 
     return Promise.resolve(bugsToDisplay)
 }
@@ -43,7 +66,7 @@ function getById(bugId) {
 
 function remove(bugId) {
     const idx = bugs.findIndex(bug => bug._id === bugId)
-// console.log('bugId:', bugId)
+    // console.log('bugId:', bugId)
     if (idx === -1) {
         loggerService.error(`Couldn\'t remove bug: ${bugId} in bug service`)
         return Promise.reject(`Couldn't remove bug`)
@@ -74,6 +97,10 @@ function save(bugToSave) {
 
 function _saveBugs() {
     return writeJsonFile('./data/bug.json', bugs)
+}
+
+function getTotalCount() {
+    return Promise.resolve(totalPages)
 }
 
 function getEmptyBug() {

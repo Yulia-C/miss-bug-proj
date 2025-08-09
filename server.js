@@ -17,18 +17,40 @@ app.get('/', (req, res) => {
 //* Express Routing:
 // list 
 app.get('/api/bug', (req, res) => {
+    const { txt, sortBy, sortDir, pageIdx, minSeverity } = req.query
 
-    const filterBy = {
-        txt: req.query.txt,
-        minSeverity: req.query.minSeverity,
-        pageIdx: req.query.pageIdx
+    const filter = {
+        txt: txt || '',
+        minSeverity: parseInt(minSeverity) || 0,
     }
 
-    bugService.query(filterBy)
-        .then(bugs => res.send(bugs))
+    const sort = {
+        sortBy: sortBy,
+        sortDir: parseInt(sortDir) || 1
+    }
+
+    const page = {
+        pageIdx: parseInt(pageIdx) || 0
+    }
+
+    console.log('GETTING BUGS');
+    console.log(filter, sort, page);
+
+    bugService.query(filter, sort, page)
+        .then(bugs => { res.send(bugs) })
         .catch(err => {
             loggerService.error('Cannot get bugs', err)
             res.status(400).send('Cannot load bugs')
+        })
+
+})
+
+app.get('/api/bug/totalCount', (req, res) => {
+    bugService.getTotalCount()
+        .then((count) => res.send(count))
+        .catch((err) => {
+            loggerService.error('Cannot get total bugs', err)
+            res.status(503).send('Cannot get total bugs')
         })
 })
 
@@ -60,10 +82,11 @@ app.put('/api/bug/:id', (req, res) => {
         description,
         labels
     }
+
     bugService.save(bugToSave)
         .then(savedBug => res.send(savedBug))
         .catch(err => {
-            loggerService.error('Cannot save bug',err)
+            loggerService.error('Cannot save bug', err)
             res.status(400).send(err)
         })
 })
