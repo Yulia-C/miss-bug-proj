@@ -1,10 +1,12 @@
 const { useState, useEffect } = React
 
+// import { bugService } from '../services/bug.service.local.js'
 import { bugService } from '../services/bug.service.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
+import { authService } from '../services/auth.service.local.js'
 
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
@@ -56,6 +58,7 @@ export function BugIndex() {
             severity: +prompt('Bug severity?', 3),
             description: prompt('Describe the bug:', ''),
             createdAt: Date.now(),
+            owner: authService.getLoggedinUser()
         }
 
         bugService.save(bug)
@@ -94,17 +97,6 @@ export function BugIndex() {
             return { ...prevFilter, pageIdx: idx }
         })
 
-        // setFilterBy(prev => {
-        //     const nextPageIdx = prev.pageIdx + diff
-        //     if (nextPageIdx < 0 || nextPageIdx >= totalPages - 1) {
-        //         return prev
-        //     }
-
-        //     return {
-        //         ...prev,
-        //         pageIdx: nextPageIdx
-        //     }
-        // })
     }
 
     if (!bugs) return <div>Loading...</div>
