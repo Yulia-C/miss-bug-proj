@@ -6,12 +6,14 @@ import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
-import { authService } from '../services/auth.service.local.js'
+import { authService } from '../services/auth.service.js'
 
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [totalCount, setTotalCount] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
+  
+    let loggedInUser = authService.getLoggedinUser()
 
     useEffect(() => {
         getTotalCount()
@@ -58,7 +60,7 @@ export function BugIndex() {
             severity: +prompt('Bug severity?', 3),
             description: prompt('Describe the bug:', ''),
             createdAt: Date.now(),
-            owner: authService.getLoggedinUser()
+            owner: loggedInUser.fullname
         }
 
         bugService.save(bug)

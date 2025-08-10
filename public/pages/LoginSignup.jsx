@@ -2,8 +2,8 @@ const { useState } = React
 const { useNavigate } = ReactRouter
 
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
-import { userService } from '../services/user.service.local.js'
-import { authService } from '../services/auth.service.local.js'
+import { userService } from '../services/user.service.js'
+import { authService } from '../services/auth.service.js'
 
 export function LoginSignup({ setLoggedInUser }) {
 
@@ -25,6 +25,7 @@ export function LoginSignup({ setLoggedInUser }) {
     }
 
     function login(credentials) {
+        
         authService.login(credentials)
             .then(user => {
                 setLoggedInUser(user)
@@ -39,6 +40,7 @@ export function LoginSignup({ setLoggedInUser }) {
     }
 
     function signup(credentials) {
+
         authService.signup(credentials)
             .then(user => {
                 setLoggedInUser(user)

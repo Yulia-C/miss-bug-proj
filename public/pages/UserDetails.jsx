@@ -1,7 +1,7 @@
 const { useState, useEffect } = React
 const { useParams, useNavigate, Link } = ReactRouterDOM
 
-import { userService } from "../services/user.service.local.js"
+import { userService } from "../services/user.service.js"
 
 export function UserDetails() {
 
@@ -30,6 +30,6 @@ export function UserDetails() {
             <h2>Username: {user.username}</h2>
             <h2>User Id: {user._id}</h2>
         </pre>
-        <Link to="/">Back Home</Link>
+        <Link to="/bug">Back</Link>
     </section>
 }
