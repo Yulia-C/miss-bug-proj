@@ -10,7 +10,7 @@ import { BugIndex } from './pages/BugIndex.jsx'
 import { BugDetails } from './pages/BugDetails.jsx'
 import { AboutUs } from './pages/AboutUs.jsx'
 import { UserDetails } from './pages/UserDetails.jsx'
-import { authService } from './services/auth.service.local.js'
+import { authService } from './services/auth.service.js'
 import { LoginSignup } from './pages/LoginSignup.jsx'
 
 export function App() {
@@ -24,9 +24,9 @@ export function App() {
                 <main className="container">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/bug" element={<BugIndex />} />
                         <Route path="/bug/:bugId" element={<BugDetails />} />
                         <Route path="/about" element={<AboutUs />} />
+                        <Route path="/bug" element={<BugIndex />} />
                         <Route path="/auth" element={<LoginSignup setLoggedInUser={setLoggedInUser} />} />
                         <Route path="/user/:userId" element={<UserDetails />} />
 

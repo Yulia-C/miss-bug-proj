@@ -9,18 +9,28 @@
       "critical",
       "need-CR",
       "dev-branch"
-    ]
+    ],
+    "owner": {
+      "_id": "u101",
+      "fullname": "Puki Ja",
+      "isAdmin": true
+    }
   },
   {
     "title": "Keyboard Not Found",
-    "severity": 3,
+    "severity": 2,
     "_id": "K3YB0RD",
     "description": "A mischievous glitch that disables input entirely—perfect for silencing panicked users mid-debug.",
     "createdAt": "1542107359454",
     "labels": [
       "need-CR",
       "dev-branch"
-    ]
+    ],
+    "owner": {
+      "_id": "u101",
+      "fullname": "Puki Ja",
+      "isAdmin": true
+    }
   },
   {
     "title": "404 Coffee Not Found",
@@ -31,7 +41,11 @@
     "labels": [
       "need-CR",
       "critical"
-    ]
+    ],
+    "owner": {
+      "_id": "u103",
+      "fullname": "Muki Ba"
+    }
   },
   {
     "title": "Unexpected Response",
@@ -40,6 +54,11 @@
     "description": "The wildcard menace that sends cryptic replies, breaking APIs and confusing even the most seasoned devs.",
     "createdAt": "1542107359454",
     "labels": [
-      "need-CR"]
+      "need-CR"
+    ],
+    "owner": {
+      "_id": "u102",
+      "fullname": "Shuki Shuk"
+    }
   }
 ]

@@ -9,37 +9,67 @@
       "critical",
       "need-CR",
       "dev-branch"
-    ]
-  },
-  {
-    "title": "Keyboard Not Found",
-    "severity": 3,
-    "_id": "K3YB0RD",
-    "description": "A mischievous glitch that disables input entirely—perfect for silencing panicked users mid-debug.",
-    "createdAt": "1542107359454",
-    "labels": [
-      "need-CR",
-      "dev-branch"
-    ]
-  },
-  {
-    "title": "404 Coffee Not Found",
-    "severity": 2,
-    "_id": "C0FF33",
-    "description": "A critical error in developer productivity—caused by an empty mug and shattered dreams.",
-    "createdAt": "1542107359454",
-    "labels": [
-      "need-CR",
-      "critical"
-    ]
+    ],
+    "owner": {
+      "_id": "u101",
+      "fullname": "Puki Ja",
+      "isAdmin": true
+    }
   },
   {
     "title": "Unexpected Response",
-    "severity": 2,
+    "severity": 1,
     "_id": "G0053",
     "description": "The wildcard menace that sends cryptic replies, breaking APIs and confusing even the most seasoned devs.",
+    "createdAt": "1542107359454",
     "labels": [
       "need-CR"
-    ]
+    ],
+    "owner": {
+      "_id": "u102",
+      "fullname": "Shuki Shuk"
+    }
+  },
+  {
+    "title": "bug bobo",
+    "severity": 3,
+    "description": "1",
+    "labels": [
+      "critical"
+    ],
+    "owner": {
+      "_id": "Xk0dW",
+      "fullname": "Bbobo Bo"
+    },
+    "_id": "bVhzk",
+    "createdAt": 1754835397379
+  },
+  {
+    "title": "bugbug",
+    "severity": 1,
+    "description": "1asdd",
+    "labels": [
+      "critical"
+    ],
+    "owner": {
+      "_id": "Xk0dW",
+      "fullname": "Bbobo Bo"
+    },
+    "_id": "KnvfL",
+    "createdAt": 1754838939999
+  },
+  {
+    "title": "dfg",
+    "severity": 3,
+    "description": "f",
+    "labels": [
+      "critical"
+    ],
+    "owner": {
+      "_id": "u101",
+      "fullname": "Puki Ja"
+    },
+    "_id": "61x6e",
+    "createdAt": 1754844662405
   }
 ]

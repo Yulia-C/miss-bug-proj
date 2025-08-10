@@ -367,3 +367,353 @@
 3.8.2025, 22:01:04 - INFO - Server ready at port http://127.0.0.1:3030/
 3.8.2025, 22:02:21 - INFO - Server ready at port http://127.0.0.1:3030/
 3.8.2025, 22:02:43 - INFO - Server ready at port http://127.0.0.1:3030/
+3.8.2025, 22:13:41 - INFO - Server ready at port http://127.0.0.1:3030/
+3.8.2025, 22:14:10 - INFO - Server ready at port http://127.0.0.1:3030/
+3.8.2025, 22:16:31 - INFO - Server ready at port http://127.0.0.1:3030/
+3.8.2025, 22:20:51 - INFO - Server ready at port http://127.0.0.1:3030/
+4.8.2025, 19:52:16 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:33:39 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:35:12 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:35:59 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:40:54 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:42:49 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:43:58 - ERROR - Couldn't get bug: 001 in bug service
+5.8.2025, 9:43:58 - ERROR - Couldn't get bug
+5.8.2025, 9:44:42 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 9:44:52 - ERROR - Couldn't get bug: 001 in bug service
+5.8.2025, 9:44:52 - ERROR - Couldn't get bug
+5.8.2025, 9:45:05 - ERROR - Couldn't get bug: 001 in bug service
+5.8.2025, 9:45:05 - ERROR - Couldn't get bug
+5.8.2025, 9:56:58 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:03:00 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:11:44 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:13:03 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:13:05 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:14:55 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:15:29 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:15:44 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:16:17 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:16:32 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:17:22 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:20:06 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:30:17 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:31:46 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:31:59 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:32:31 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:33:43 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:35:58 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:36:10 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:37:26 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:39:19 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:41:12 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:42:00 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:43:16 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:43:24 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:44:01 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:44:17 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:45:03 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:46:13 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:46:57 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:47:15 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:48:13 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:50:11 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:53:45 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:54:15 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:54:45 - INFO - Server ready at port http://127.0.0.1:3030/
+5.8.2025, 10:55:05 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 15:54:14 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 15:57:25 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 15:58:50 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 15:59:12 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:03:32 - INFO - Server ready at port http://127.0.0.1:3031/
+6.8.2025, 16:06:50 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:08:26 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:09:48 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:10:10 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:10:53 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:21:07 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:21:48 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:22:10 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:22:31 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:26:35 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:27:59 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:31:52 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:33:41 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:34:47 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:36:00 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:36:35 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:36:46 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:37:30 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:39:18 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:39:52 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:40:01 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:40:38 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:41:00 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:46:08 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 16:46:40 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:08:33 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:09:11 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:09:20 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:12:15 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:21:05 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:24:23 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:34:52 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:35:43 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:45:07 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:45:12 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:46:20 - INFO - Server ready at port http://127.0.0.1:3030/
+6.8.2025, 17:49:21 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:19:02 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:30:35 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:32:58 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:33:21 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:34:38 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:38:25 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:39:49 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:40:43 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:41:09 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:44:16 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:48:32 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:48:49 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:55:34 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:55:38 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 13:58:20 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:00:52 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:01:25 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:18 - ERROR - Couldn't get bug
+9.8.2025, 14:16:53 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:53 - ERROR - Couldn't get bug
+9.8.2025, 14:16:54 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:54 - ERROR - Couldn't get bug
+9.8.2025, 14:16:54 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:54 - ERROR - Couldn't get bug
+9.8.2025, 14:16:54 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:16:54 - ERROR - Couldn't get bug
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:19:17 - ERROR - Couldn't get bug
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:20:24 - ERROR - Couldn't get bug
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:09 - ERROR - Couldn't get bug
+9.8.2025, 14:22:30 - ERROR - Couldn't get bug: totalCount in bug service
+9.8.2025, 14:22:30 - ERROR - Couldn't get bug
+9.8.2025, 14:22:54 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:22:58 - ERROR - Couldn't get bug: totalcount in bug service
+9.8.2025, 14:22:58 - ERROR - Couldn't get bug
+9.8.2025, 14:23:05 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:23:32 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:23:49 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:23:54 - ERROR - Couldn't get bug: totalcount in bug service
+9.8.2025, 14:23:54 - ERROR - Couldn't get bug
+9.8.2025, 14:24:19 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:24:33 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:25:09 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:26:06 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:26:29 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:38:08 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:38:19 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:38:27 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:38:37 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:43:37 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 14:47:31 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 15:47:42 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 15:49:31 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:21:16 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:30:46 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:31:07 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:35:46 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:35:59 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:38:20 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:42:12 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:43:42 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:44:42 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:46:12 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:52:53 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 16:56:19 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 17:28:24 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 17:31:40 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 17:34:19 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 17:36:05 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 17:41:13 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 17:54:38 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:29:26 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:31:51 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:34:24 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:36:48 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:38:55 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:39:38 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:39:52 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:40:22 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:40:24 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:42:14 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:42:38 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:42:52 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:50:22 - INFO - Server ready at port http://127.0.0.1:3030/
+9.8.2025, 19:52:20 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:13:25 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:35:38 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:35:50 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:36:53 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:37:41 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:39:37 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:40:24 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:40:30 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:40:40 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:55:42 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:55:44 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:57:57 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:58:01 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:58:13 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 11:58:18 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:02:11 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:02:14 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:02:24 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:02:27 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:02:45 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:02:55 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:04:22 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:09:08 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:16:56 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:21:02 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:28:31 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:31:01 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:37:00 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:38:54 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:40:43 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:41:13 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:42:24 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 12:42:38 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:26:48 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:31:37 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:38:53 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:39:28 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:42:57 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:43:47 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:43:57 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:51:57 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 13:53:46 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:01:25 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:11:08 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:14:33 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:20:59 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:21:32 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:21:35 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:23:13 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:23:28 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:23:45 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:28:00 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:30:03 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:33:36 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:34:30 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:34:54 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:36:33 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:40:35 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:44:05 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:52:52 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:55:18 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 14:58:31 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:03:00 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:04:22 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:10:24 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:11:58 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:16:18 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:16:47 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:22:01 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:24:02 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:26:14 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:26:58 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:41:14 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:44:54 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:54:09 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:55:42 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:57:45 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:58:37 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 15:58:43 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:00:07 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:01:28 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:03:18 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:03:33 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:07:29 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:08:30 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:14:27 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:14:53 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:20:33 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:24:34 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:25:09 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:25:47 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:26:55 - ERROR - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Array
+10.8.2025, 16:34:55 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:36:22 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:38:47 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:39:01 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:41:31 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:42:09 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:42:23 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:45:27 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:48:22 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:51:48 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:52:32 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 16:53:04 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:00:14 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:04:25 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:06:58 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:07:28 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:07:47 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:08:37 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:11:09 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:13:11 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:15:24 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:15:26 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:16:23 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:42:52 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:44:48 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 17:52:37 - ERROR - Username taken | ReferenceError: usersStr is not defined
+10.8.2025, 17:52:51 - ERROR - Username taken | ReferenceError: usersStr is not defined
+10.8.2025, 17:53:12 - ERROR - Username taken | User already exists
+10.8.2025, 17:54:04 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 18:21:11 - ERROR - Couldn't remove bug: u103 in bug service
+10.8.2025, 18:21:11 - ERROR - Couldn't remove bug
+10.8.2025, 18:21:48 - ERROR - Not your Bug
+10.8.2025, 18:23:39 - ERROR - Not your Bug
+10.8.2025, 18:38:00 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 18:39:37 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 18:47:32 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 18:48:57 - INFO - Server ready at port http://127.0.0.1:3030/
+10.8.2025, 18:49:20 - INFO - Server ready at port http://127.0.0.1:3030/

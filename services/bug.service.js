@@ -64,31 +64,37 @@ function getById(bugId) {
     return Promise.resolve(bug)
 }
 
-function remove(bugId) {
+function remove(bugId, loggedInUser) {
     const idx = bugs.findIndex(bug => bug._id === bugId)
-    // console.log('bugId:', bugId)
+    const bug = bugs[idx]
+
     if (idx === -1) {
         loggerService.error(`Couldn\'t remove bug: ${bugId} in bug service`)
         return Promise.reject(`Couldn't remove bug`)
     }
+    if (!loggedInUser.isAdmin && bug.owner._id !== loggedInUser._id) return Promise.reject('Not your Bug')
 
     bugs.splice(idx, 1)
     return _saveBugs()
 }
 
-function save(bugToSave) {
+function save(bugToSave, loggedInUser) {
     if (bugToSave._id) {
         const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
         if (idx === -1) {
             loggerService.error(`Couldn\'t update bug: ${bugToSave._id} in bug service`)
             return Promise.reject(`Couldn't update bug`)
         }
-
+        if (!loggedInUser.isAdmin && bugToSave.owner._id) return Promise.reject('Not your bug')
         bugs[idx] = { ...bugs[idx], ...bugToSave }
         // bugs.splice(idx, 1, bugToSave)
     } else {
         bugToSave._id = makeId()
         bugToSave.createdAt = Date.now()
+        bugToSave.owner = {
+            _id: loggedInUser._id,
+            fullname: loggedInUser.fullname
+        }
         bugs.push(bugToSave)
     }
     return _saveBugs()
@@ -110,5 +116,6 @@ function getEmptyBug() {
         description: description || '',
         createdAt: Date.now(),
         labels: [],
+        owner: {},
     }
 }
