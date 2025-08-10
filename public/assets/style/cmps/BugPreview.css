@@ -4,6 +4,13 @@
     gap: .6em;
 }
 
+.bug-preview p,
+a,
+h4 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .bug-preview .title {
     font-weight: bold;
     font-size: 1.1em;
@@ -12,4 +19,8 @@
 .bug-preview span {
     margin-inline-start: .5em;
     font-size: .9em;
+}
+
+.bug-preview img {
+    max-height: 300px;
 }

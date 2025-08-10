@@ -1,10 +1,11 @@
 .app-header {
     padding-block: 1em;
     background-color: var(--gray1);
-    color: whitesmoke;
+    color: rgb(16, 144, 144);
+    font-weight: bold;
 }
 
-.app-header > * {
+.app-header>* {
     align-items: center;
     grid-row: 1;
 }
@@ -12,24 +13,41 @@
 .app-header h1 {
     margin: 0;
     justify-self: start;
+    grid-column: 1;
+    padding-inline-start: var(--min-padding);
 }
 
 .app-header nav {
     display: flex;
     gap: 1em;
     justify-self: end;
+    grid-column: 3 ;
 }
 
 .app-header nav a {
     border-block-end: 1px solid transparent;
     text-decoration: none;
+    margin-inline: 1em;
+}
+
+.app-header nav .user {
+    display: flex;
+    align-items: center;
+
+    a {
+        width: 100%;
+    }
+
+    button {
+        margin-inline-end: var(--min-padding);
+    }
 }
 
 .app-header nav a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 .app-header nav a.active {
-    color: var(--color3);
-    border-block-end: 1px solid var(--color3);
+    color: rgb(34, 195, 195);
+    border-block-end: 1px solid rgb(34, 195, 195);
 }

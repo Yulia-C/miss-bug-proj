@@ -1,6 +1,6 @@
 .user-msg {
     position: fixed;
-    top: 13px;
+    bottom: 10px;
     right: 10px;
 
     display: flex;
@@ -10,7 +10,7 @@
     border-radius: .5em;
     
     font-size: .9em;
-    background-color: #111;
+    background-color: var(--bg1);
     color: white;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .success {
-    background-color: var(--success);
+    background-color: var(--bg1);
 }
 
 .danger {

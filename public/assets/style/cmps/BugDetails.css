@@ -1,12 +1,24 @@
-.bug-details h5 {
-    margin: 1em 0;
-    font-size: 1.1em;
+.bug-details div {
+    display: grid;
+    gap: 1em;
+    grid-template-rows: auto;
 }
 
-.bug-details h5 span{
+.bug-details div>* {
+    margin: .5em 0;
+    font-size: 1em;
+    justify-self: center;
+}
+
+.bug-details h5 span {
     color: red;
 }
 
 .bug-details hr {
     margin: 1em 0;
+}
+
+.bug-details img {
+    justify-self: center;
+    max-width: 500px;
 }
