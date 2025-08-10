@@ -1,11 +1,11 @@
 
+let BASE_URL = '/api/user/'
 export const userService = {
     query,
     getById,
     getEmptyCredentials,
 }
 
-const BASE_URL = '/api/user/'
 
 function query() {
     return axios.get(BASE_URL)
@@ -14,6 +14,7 @@ function query() {
 
 function getById(userId) {
     return axios.get(BASE_URL + userId)
+        .then(res => res.data)
 }
 
 function getEmptyCredentials() {
