@@ -217,7 +217,7 @@ app.post('/api/auth/logout', (req, res) => {
     res.send('Logged out')
 })
 
-const port = 3030
-app.listen(port, () => loggerService.info(`Server ready at port http://127.0.0.1:${port}/`))
+const PORT = process.env.PORT || 3030
+app.listen(PORT, () => loggerService.info(`Server ready at PORT http://127.0.0.1:${PORT}/`))
 // or
 // app.listen(port, () => loggerService.info(`Server ready at port http://localhost:${port}/`))
