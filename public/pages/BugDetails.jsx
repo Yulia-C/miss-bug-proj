@@ -15,15 +15,16 @@ export function BugDetails() {
             .catch(err => showErrorMsg(`Cannot load bug`, err))
     }, [])
 
-    return <div className="bug-details">
-        <h3>Bug Details</h3>
+    return <div className="bug-details main-content">
+        <h3>Bug Details:</h3>
         {!bug && <p className="loading">Loading....</p>}
         {
             bug &&
             <div>
-                <h4>{bug.title}</h4>
+                <h4> {bug.title}</h4>
+                <img className="bug-img" src={`https://api.dicebear.com/8.x/bottts/svg?seed=${bug.title}`} />
                 <h5>Severity: <span>{bug.severity}</span></h5>
-                <p>{bug.description}</p>
+                <p>Description: {bug.description}</p>
             </div>
         }
         <hr />
