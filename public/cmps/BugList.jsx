@@ -9,7 +9,7 @@ export function BugList({ bugs, onRemoveBug, onEditBug }) {
     function canUpdateBug(bug) {
         if (!bug.owner) return true
         if (!loggedInUser) return false
-        if (!loggedInUser.isAdmin) return false
+        if (loggedInUser.isAdmin) return true
         return bug.owner._id === loggedInUser._id
     }
 

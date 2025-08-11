@@ -12,7 +12,7 @@ export const userService = {
 }
 
 function query() {
-    const usersToReturn = users.map(user => ({ _id: user._id, fullname: user.fullname }))
+    const usersToReturn = users.map(user => ({ _id: user._id, fullname: user.fullname, username: user.username }))
     return Promise.resolve(usersToReturn)
 }
 
@@ -33,9 +33,10 @@ function getByUsername(username) {
 }
 
 function remove(userId) {
-    users = users.filter(user => user._id !== userId)
+  const idx = users.findIndex(user => user._id === userId)
+    if (idx === -1) return Promise.reject('sorry not found')
+    users.splice(idx, 1)
     return _saveUsers()
-        .catch(err => loggerService.error(err))
 }
 
 function add(user) {
@@ -43,7 +44,13 @@ function add(user) {
         .then(existingUser => {
             if (existingUser) return Promise.reject('User already exists')
 
+            if (!user.fullname || !user.username || !user.password) {
+                return Promise.reject('Incomplete credentials')
+            }
+
             user._id = makeId()
+            user.isAdmin = false
+
             users.push(user)
 
             return _saveUsers()

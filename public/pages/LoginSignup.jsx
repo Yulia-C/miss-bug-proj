@@ -25,17 +25,16 @@ export function LoginSignup({ setLoggedInUser }) {
     }
 
     function login(credentials) {
-        
+
         authService.login(credentials)
-            .then(user => {
-                setLoggedInUser(user)
+            .then(user => setLoggedInUser(user))
+            .then(() => {
                 showSuccessMsg('Logged in successfully')
                 navigate('/bug')
-
             })
             .catch(err => {
-                console.log('err:', err)
                 showErrorMsg(`Couldn't login`)
+                console.log('err:', err)
             })
     }
 

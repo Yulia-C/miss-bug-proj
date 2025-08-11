@@ -1,33 +1,30 @@
 [
   {
-    "_id": "u101",
-    "username": "puki",
-    "fullname": "Puki Ja",
-    "password": "123",
+    "_id": "fLtg9",
+    "username": "admin",
+    "fullname": "Admin Adminov",
+    "password": "admin",
     "isAdmin": true
   },
   {
-    "_id": "u102",
+    "_id": "u1021",
+    "username": "puki",
+    "fullname": "Puki Ja",
+    "password": "123",
+    "isAdmin": false
+  },
+  {
+    "_id": "u1022",
     "username": "muki",
     "fullname": "Muki Ba",
-    "password": "secret2"
+    "password": "secret2",
+    "isAdmin": false
   },
   {
-    "_id": "u103",
+    "_id": "u104",
     "username": "shuki",
     "fullname": "Shuki Shuk",
-    "password": "1234"
-  },
-  {
-    "username": "bubu",
-    "password": "123",
-    "fullname": "Bbobo Bo",
-    "_id": "Xk0dW"
-  },
-  {
-    "username": "baba",
-    "password": "123",
-    "fullname": "BABA Booooo",
-    "_id": "v9KEZ"
+    "password": "1234",
+    "isAdmin": false
   }
 ]

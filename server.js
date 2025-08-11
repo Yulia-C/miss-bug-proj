@@ -19,20 +19,20 @@ app.get('/', (req, res) => {
 //* Express Routing:
 // list 
 app.get('/api/bug', (req, res) => {
-    const { txt, sortBy, sortDir, pageIdx, minSeverity } = req.query
 
     const filter = {
-        txt: txt || '',
-        minSeverity: parseInt(minSeverity) || 0,
+        txt: req.query.txt || '',
+        minSeverity: parseInt(req.query.minSeverity) || 0,
+        userId: req.query.userId || ''
     }
 
     const sort = {
-        sortBy: sortBy,
-        sortDir: parseInt(sortDir) || 1
+        sortBy: req.query.sortBy,
+        sortDir: parseInt(req.query.sortDir) || 1
     }
 
     const page = {
-        pageIdx: parseInt(pageIdx) || 0
+        pageIdx: parseInt(req.query.pageIdx) || 0
     }
 
     // console.log('GETTING BUGS');
@@ -215,6 +215,20 @@ app.post('/api/auth/login', (req, res) => {
 app.post('/api/auth/logout', (req, res) => {
     res.clearCookie('loginToken')
     res.send('Logged out')
+})
+
+// Admin 
+app.delete('/api/admin/:userId', (req, res) => {
+    const loggedInUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedInUser.isAdmin) return res.status(401).send('Cannot delete user')
+
+    const userId = req.params.userId
+    userService.remove(userId)
+        .then(() => res.send(`user ${userId} deleted`))
+        .catch(err => {
+            loggerService.error(err)
+            res.status(400).send(err)
+        })
 })
 
 const PORT = process.env.PORT || 3030

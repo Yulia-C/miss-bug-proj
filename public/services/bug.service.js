@@ -34,8 +34,6 @@ function save(bug) {
         return axios.post(BASE_URL, bug)
             .then(res => res.data)
     }
-
-
 }
 
 function getTotalBugs() {

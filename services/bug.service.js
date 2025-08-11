@@ -12,10 +12,10 @@ export const bugService = {
 
 const bugs = readJsonFile('./data/bug.json')
 
-const PAGE_SIZE = 2
+const PAGE_SIZE = 3
 let totalPages = null
 
-function query(filter, sort, page) {
+function query(filter, sort, page, userId) {
 
     let bugsToDisplay = bugs
 
@@ -29,6 +29,10 @@ function query(filter, sort, page) {
             regExp.test(bug.title)
             || bug.labels.some(label => regExp.test(label))
             || regExp.test(bug.description))
+    }
+
+    if (filter.userId) {
+        bugsToDisplay = bugsToDisplay.filter(bug => bug.owner._id === filter.userId)
     }
 
     if (sort.sortBy) {
@@ -85,7 +89,7 @@ function save(bugToSave, loggedInUser) {
             loggerService.error(`Couldn\'t update bug: ${bugToSave._id} in bug service`)
             return Promise.reject(`Couldn't update bug`)
         }
-        if (!loggedInUser.isAdmin && bugToSave.owner._id) return Promise.reject('Not your bug')
+        if (!loggedInUser.isAdmin && !bugToSave.owner._id) return Promise.reject('Not your bug')
         bugs[idx] = { ...bugs[idx], ...bugToSave }
         // bugs.splice(idx, 1, bugToSave)
     } else {

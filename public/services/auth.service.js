@@ -14,7 +14,10 @@ function login({ username, password }) {
     return axios.post(BASE_URL + 'login', { username, password })
         .then(res => res.data)
         .then(_setLoggedInUser)
-        .catch(err => console.log('err:', err))
+        .catch(err => {
+            console.log('err:', err)
+            throw err
+        })
 }
 
 function signup({ username, password, fullname }) {

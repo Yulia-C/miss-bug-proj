@@ -1,7 +1,7 @@
 [
   {
     "title": "Infinite Loop Detected",
-    "severity": 2,
+    "severity": 1,
     "_id": "1NF1N1T3",
     "description": "This bug traps programs in a relentless cycle, consuming time and sanity until all logic breaks down.",
     "createdAt": "1542107359454",
@@ -11,9 +11,9 @@
       "dev-branch"
     ],
     "owner": {
-      "_id": "u101",
+      "_id": "u1021",
       "fullname": "Puki Ja",
-      "isAdmin": true
+      "isAdmin": false
     }
   },
   {
@@ -26,8 +26,9 @@
       "need-CR"
     ],
     "owner": {
-      "_id": "u102",
-      "fullname": "Shuki Shuk"
+      "_id": "u104",
+      "fullname": "Shuki Shuk",
+      "isAdmin": false
     }
   },
   {
@@ -38,8 +39,9 @@
       "critical"
     ],
     "owner": {
+      "fullname": "Bbobo Bo",
       "_id": "Xk0dW",
-      "fullname": "Bbobo Bo"
+      "isAdmin": false
     },
     "_id": "bVhzk",
     "createdAt": 1754835397379
@@ -52,8 +54,9 @@
       "critical"
     ],
     "owner": {
+      "fullname": "Bbobo Bo",
       "_id": "Xk0dW",
-      "fullname": "Bbobo Bo"
+      "isAdmin": false
     },
     "_id": "KnvfL",
     "createdAt": 1754838939999
@@ -66,10 +69,26 @@
       "critical"
     ],
     "owner": {
-      "_id": "u101",
-      "fullname": "Puki Ja"
+      "_id": "u1021",
+      "fullname": "Puki Ja",
+      "isAdmin": false
     },
     "_id": "61x6e",
     "createdAt": 1754844662405
+  },
+  {
+    "title": "Some bug",
+    "severity": 3,
+    "description": "fff",
+    "labels": [
+      "critical"
+    ],
+    "owner": {
+      "_id": "u1021",
+      "fullname": "Puki Ja",
+      "isAdmin": false
+    },
+    "_id": "tu3pl",
+    "createdAt": 1754930379891
   }
 ]
