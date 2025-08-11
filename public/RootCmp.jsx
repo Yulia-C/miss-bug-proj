@@ -12,6 +12,7 @@ import { AboutUs } from './pages/AboutUs.jsx'
 import { UserDetails } from './pages/UserDetails.jsx'
 import { authService } from './services/auth.service.js'
 import { LoginSignup } from './pages/LoginSignup.jsx'
+import { AdminDashBoard } from './pages/AdminDashBoard.jsx'
 
 export function App() {
     const [loggedInUser, setLoggedInUser] = useState(authService.getLoggedinUser())
@@ -28,6 +29,7 @@ export function App() {
                         <Route path="/about" element={<AboutUs />} />
                         <Route path="/bug" element={<BugIndex />} />
                         <Route path="/auth" element={<LoginSignup setLoggedInUser={setLoggedInUser} />} />
+                        <Route path="/admin" element={<AdminDashBoard/>}/>
                         <Route path="/user/:userId" element={<UserDetails />} />
 
                     </Routes>

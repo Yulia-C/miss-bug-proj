@@ -39,7 +39,7 @@
     }
 
     button {
-        margin-inline-end: var(--min-padding);
+        padding-inline-end: var(--min-padding);
     }
 }
 
