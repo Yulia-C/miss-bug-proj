@@ -1,0 +1,24 @@
+.users {
+    gap: 1em;
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.user-list>li {
+    background-color: #a2ffff63;
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+
+    place-items: center;
+    padding: 20px;
+    border-radius: 9px;
+    outline: 1px solid rgba(245, 245, 245, 0.524);
+    box-shadow: 0 2px 6px 0px rgba(232, 228, 228, 0.517);
+}
